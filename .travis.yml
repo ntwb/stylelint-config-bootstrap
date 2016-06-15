@@ -1,0 +1,23 @@
+sudo: required
+dist: trusty
+
+git:
+  depth: 1
+
+branches:
+  only:
+    - master
+
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - '6'
+  - '4'
+
+before_install:
+  # remove outdated deps, assists with cache maintenance
+  - npm prune
