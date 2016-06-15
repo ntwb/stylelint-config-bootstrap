@@ -1,0 +1,68 @@
+{
+  "name": "stylelint-config-bootstrap",
+  "version": "0.0.0",
+  "description": "Bootstrap shareable config for stylelint",
+  "keywords": [
+    "bootstrap",
+    "Bootstrap",
+    "code",
+    "code",
+    "style",
+    "css",
+    "lint",
+    "linter",
+    "linting",
+    "scss",
+    "stylelint",
+    "stylelint-config",
+    "stylelint-config-bootstrap",
+    "validate"
+  ],
+  "author": "Stephen Edgar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntwb/stylelint-config-bootstrap.git"
+  },
+  "homepage": "https://github.com/ntwb/stylelint-config-bootstrap#readme",
+  "bugs": "https://github.com/ntwb/stylelint-config-bootstrap/issues",
+  "main": "index.js",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "eslint": "^2.4.0",
+    "eslint-plugin-ava": "^2.2.1",
+    "eslint-config-stylelint": "^2.0.0",
+    "npmpub": "^3.0.3",
+    "stylelint": "^6.6.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^9.0.0",
+    "stylelint-scss": "^1.1.1"
+  },
+  "scripts": {
+    "ava": "ava --verbose \"__tests__/**/*.js\"",
+    "lint": "eslint . --ignore-path .gitignore",
+    "pretest": "npm run lint",
+    "release": "npmpub --verbose",
+    "test": "npm run ava"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "ava"
+    ],
+    "extends": [
+      "stylelint",
+      "plugin:ava/recommended"
+    ]
+  }
+}
