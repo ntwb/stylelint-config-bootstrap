@@ -1,23 +1,19 @@
 sudo: required
 dist: trusty
-
 git:
   depth: 1
-
 branches:
   only:
-    - master
-
+  - master
 language: node_js
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 node_js:
-  - '6'
-  - '4'
-
+- '6'
+- '4'
 before_install:
-  # remove outdated deps, assists with cache maintenance
-  - npm prune
+- npm prune
+notifications:
+  slack:
+    secure: c6lDdO9tOs/4dSpmFtOEnMFIq4D7xKMxLPsrF20AenKgkypPWP+dC9C3H5g3PAU6nNy5f4APxXA5tw/9QrEK+VnEpdD27AKE5sJpQ9WeguCPdmyvc0Td7j5eJDORB0/1XtMXpp8zVOr0y/9Y1pRTNhL+J61e97pc+RBrzOWAdvznzAu9LKqsGKLyDaJBx12qE5Xis4/0qaG0QZJh9W+pBNfBa6niAnWl8Zp+/f6rGP0DFHw8VjUjotMBV6sICKxqB7L0AgUHL34oPhjZOlEtdB9Xgf7dHh6WZUzMBipPDJST5XC6oUdYUahSj+j5Cj1QgCQREm1bsjwXlZlSiRNsVteptfZ0VRCLamKCuRex9khmet8funiK0SFkrrh62r06hYgJnQKIJs9MluLgOgNiLcmFKs0g+EE/P8wvm2cD638cm7HMJ5DF/shbk1DvftlssgiHoMJxyFsr3N0T+87gvw1ZnBUfu46UASZgbqD/t5DtKhfBK/34TDdFKP/6WzaLTIraUZ9fNx+o7U69iC0SPvZt7NYQQLlrTfxif8aQnkeXBtQsCGLI6pYOuWuuGiTEn/QtqeHS0LGn4GPH9k2zrN5KTVUUlDeB8i7NOU97K1edlG+4+PVqSqCM7zI++D+xGQaTSt7y8mqepBOB7UI2J2mVqmzG+tnjrTQEofHBv9E=
