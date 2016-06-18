@@ -4,6 +4,7 @@ module.exports = {
     "stylelint-scss",
   ],
   "rules": {
+    "function-parentheses-space-inside": "never",
     "number-leading-zero": "never",
   },
 }
