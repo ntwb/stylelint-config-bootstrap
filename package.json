@@ -35,10 +35,11 @@
   "devDependencies": {
     "ava": "^0.15.2",
     "eslint": "^2.4.0",
-    "eslint-plugin-ava": "^2.2.1",
     "eslint-config-stylelint": "^2.0.0",
+    "eslint-plugin-ava": "^2.2.1",
     "npmpub": "^3.0.3",
-    "stylelint": "^6.6.0"
+    "stylelint": "^6.6.0",
+    "stylelint-property-unknown": "^1.0.1"
   },
   "dependencies": {
     "stylelint-config-standard": "^9.0.0",
