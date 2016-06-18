@@ -9,6 +9,9 @@ module.exports = {
     "color-named": "never",
     "declaration-block-no-duplicate-properties": true,
     "declaration-no-important": true,
+    "declaration-property-value-blacklist": {
+      "/^border/": ["none"],
+    },
     "function-parentheses-space-inside": "never",
     "function-url-quotes": "always",
     "max-nesting-depth": 4,
