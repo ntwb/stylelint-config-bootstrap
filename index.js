@@ -1,6 +1,7 @@
 module.exports = {
   "extends": "stylelint-config-standard",
   "plugins": [
+    "stylelint-property-unknown",
     "stylelint-scss",
   ],
   "rules": {
@@ -23,5 +24,6 @@ module.exports = {
     "scss/at-import-no-partial-extension": true,
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/selector-no-redundant-nesting-selector": true,
+    "property-unknown": true,
   },
 }
