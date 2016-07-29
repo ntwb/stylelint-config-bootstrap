@@ -1,3 +1,8 @@
+# 0.1.0
+
+* Updated: Update to `stylelint` v7.x.
+* Updated: Update to `stylelint-config-standard` v11.x.
+
 # 0.0.1-alpha
 
 Initial config
