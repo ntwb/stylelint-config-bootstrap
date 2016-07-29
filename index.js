@@ -2,6 +2,7 @@ module.exports = {
   "extends": "stylelint-config-standard",
   "plugins": [
     "stylelint-scss",
+    "stylelint-selector-no-utility",
   ],
   "rules": {
     "at-rule-no-vendor-prefix": true,
@@ -195,6 +196,7 @@ module.exports = {
     "selector-no-vendor-prefix": true,
     "string-quotes": "double",
     "value-no-vendor-prefix": true,
+    "primer/selector-no-utility": true,
     "scss/at-import-partial-extension-blacklist": ["scss"],
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/selector-no-redundant-nesting-selector": true,
