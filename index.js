@@ -1,7 +1,6 @@
 module.exports = {
   "extends": "stylelint-config-standard",
   "plugins": [
-    "stylelint-property-unknown",
     "stylelint-scss",
   ],
   "rules": {
@@ -185,10 +184,11 @@ module.exports = {
     },
     "function-parentheses-space-inside": "never",
     "function-url-quotes": "always",
+    "length-zero-no-unit": true,
     "max-nesting-depth": 4,
     "media-feature-name-no-vendor-prefix": true,
     "number-leading-zero": "never",
-    "number-zero-length-no-unit": true,
+    "property-no-unknown": true,
     "property-no-vendor-prefix": true,
     "selector-no-id": true,
     "selector-no-qualifying-type": true,
@@ -198,6 +198,5 @@ module.exports = {
     "scss/at-import-no-partial-extension": true,
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/selector-no-redundant-nesting-selector": true,
-    "property-unknown": true,
   },
 }
