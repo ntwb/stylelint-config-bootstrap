@@ -1,5 +1,6 @@
 # HEAD
 
+* Added: Add `stylelint-selector-no-utility` plugin and `selector-no-utility` rule
 * Deprecated: `at-import-no-partial-extension`. Use `at-import-partial-extension-blacklist` instead.
 
 # 0.1.0
