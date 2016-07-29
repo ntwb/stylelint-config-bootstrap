@@ -195,7 +195,7 @@ module.exports = {
     "selector-no-vendor-prefix": true,
     "string-quotes": "double",
     "value-no-vendor-prefix": true,
-    "scss/at-import-no-partial-extension": true,
+    "scss/at-import-partial-extension-blacklist": ["scss"],
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/selector-no-redundant-nesting-selector": true,
   },
